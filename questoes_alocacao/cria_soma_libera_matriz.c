@@ -17,6 +17,8 @@ int main()
         }
     }
     libera_matriz(a,2);
+    libera_matriz(b,2);
+    libera_matriz(c,2);
     return 0;
 }
 float **cria_matriz(int linhas, int colunas)
