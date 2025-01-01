@@ -6,12 +6,13 @@ int main()
     int n;
     printf("Insira o tamanho do vetor: ");
     scanf("%d%*c",&n);
-    int *vet = (int*)malloc(n*sizeof(int*));
+    int *vet = (int*)malloc(n*sizeof(int));
     for(int i=0;i<n;i++)
     {
         scanf("%d%*c",&vet[i]);
     }
     printf("Quantidade de numeros pares: %d",pares(n,vet));
+    free(vet);
     return 0;
 }
 int pares(int n,int *vet)
