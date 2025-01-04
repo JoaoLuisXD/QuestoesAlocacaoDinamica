@@ -10,7 +10,7 @@ int main()
     double *polinomio = (double*)malloc(grau*sizeof(double));
     for(int i=0;i<=grau;i++)
     {
-        printf("DIGITE O %d TERMO(grau %d): ",i+1,i);
+        printf("DIGITE O %d TERMO (grau %d): ",i+1,i);
         scanf("%lf%*c",&polinomio[i]);
     }
     double x;
